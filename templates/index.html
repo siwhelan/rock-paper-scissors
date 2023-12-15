@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rock, Paper, Scissors</title>
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Optional: Added background color -->
+    <form class="pt-20">
+      <!-- Add top padding to move everything down -->
+      <div class="flex justify-center">
+        <div class="flex flex-col items-center space-y-4">
+          <!-- Add vertical spacing between child elements -->
+          <h1 class="text-4xl">Rock, Paper, Scissors</h1>
+          <h2 class="text-2xl">Choose your weapon!</h2>
+          <div class="flex space-x-3">
+            <!-- Add horizontal spacing between buttons -->
+            <button
+              class="bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded shadow-xl"
+              type="submit"
+              name="weapon"
+              value="rock"
+            >
+              Rock
+            </button>
+            <button
+              class="bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded shadow-xl"
+              type="submit"
+              name="weapon"
+              value="paper"
+            >
+              Paper
+            </button>
+            <button
+              class="bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded shadow-xl"
+              type="submit"
+              name="weapon"
+              value="scissors"
+            >
+              Scissors
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
