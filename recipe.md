@@ -53,3 +53,5 @@
 
 ### Response (200 OK):
 - Redirect to the home page (GET /) to play another game.
+
+
