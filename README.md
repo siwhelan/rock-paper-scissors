@@ -27,23 +27,19 @@ To get a local copy up and running, follow these simple steps.
 ### Installation
 
 1. Clone the repository:
-   ```sh
+   ```
    git clone https://github.com/siwhelan/rock-paper-scissors.git
    ```
 
 ### Navigate to the project directory:
 
 ```
-sh
-Copy code
 cd Project-Name
 ```
 
 ### Install Python dependencies:
 
 ```
-sh
-Copy code
 pipenv install
 ```
 
@@ -52,8 +48,6 @@ pipenv install
 To run the application locally:
 
 ```
-sh
-Copy code
 pipenv run python app.py
 ```
 
@@ -66,16 +60,14 @@ To build and run the application using Docker:
 ### Build the Docker image:
 
 ```
-sh
-Copy code
+
+
 docker build -t rock-paper-scissors .
 ```
 
 ### Run the Docker container:
 
 ```
-sh
-Copy code
 docker run -p 5000:5000 rock-paper-scissors
 ```
 
@@ -84,5 +76,5 @@ Contributions are what make the open-source community such an amazing place to l
 - Fork the Project
 - Create your Feature Branch (git checkout -b feature/AmazingFeature)
 - Commit your Changes (git commit -m 'Add some AmazingFeature')
-- Push to the Branch (git push origin feature/AmazingFeature)
+- Pu to the Branch (git pu origin feature/AmazingFeature)
 - Open a Pull Request
