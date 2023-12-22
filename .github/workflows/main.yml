@@ -25,18 +25,19 @@ jobs:
         run: |
           pipenv run pytest
 
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out the code
-        uses: actions/checkout@v3
+  # deploy:
+  #   needs: test
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Check out the code
+  #       uses: actions/checkout@v3
 
-      - name: Deploy to AWS EB
-        uses: einaregilsson/beanstalk-deploy@v18
-        with:
-          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: "rock_paper_scissors"
-          environment_name: "rock-paper-scissors-dev"
-          region: "eu-west-1"
+  #     - name: Deploy to AWS EB
+  #       uses: einaregilsson/beanstalk-deploy@v18
+  #       with:
+  #         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  #         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  #         application_name: "rock_paper_scissors"
+  #         environment_name: "rock-paper-scissors-dev"
+  #         region: "eu-west-1"
+  #         version_label: ${{ github.run_number }}
