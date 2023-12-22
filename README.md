@@ -13,7 +13,7 @@ This project is a web-based implementation of the classic game Rock, Paper, Scis
 - Python (Flask)
 - HTML/CSS (Tailwind CSS)
 - Docker for containerization
-- Deployed on Heroku
+- Deployed on Elastic Beanstalk
 
 ## Getting Started
 
@@ -23,7 +23,6 @@ To get a local copy up and running, follow these simple steps.
 
 - pip and pipenv
 - Docker (for containerization)
-- Heroku CLI (for deployment)
 
 ### Installation
 
