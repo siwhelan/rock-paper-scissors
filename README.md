@@ -60,8 +60,6 @@ To build and run the application using Docker:
 ### Build the Docker image:
 
 ```
-
-
 docker build -t rock-paper-scissors .
 ```
 
